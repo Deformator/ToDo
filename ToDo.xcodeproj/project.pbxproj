@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		F886E55F1FEB38810074F6AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F886E55E1FEB38810074F6AF /* AppDelegate.swift */; };
-		F886E5611FEB38810074F6AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F886E5601FEB38810074F6AF /* ViewController.swift */; };
+		F886E5611FEB38810074F6AF /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F886E5601FEB38810074F6AF /* ListViewController.swift */; };
 		F886E5641FEB38810074F6AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F886E5621FEB38810074F6AF /* Main.storyboard */; };
 		F886E5661FEB38810074F6AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F886E5651FEB38810074F6AF /* Assets.xcassets */; };
 		F886E5691FEB38810074F6AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F886E5671FEB38810074F6AF /* LaunchScreen.storyboard */; };
+		F886E5721FEB475C0074F6AF /* NewNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F886E5711FEB475C0074F6AF /* NewNoteViewController.swift */; };
+		F886E5741FEB49D00074F6AF /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F886E5731FEB49D00074F6AF /* ListTableViewCell.swift */; };
+		F886E5761FEB4A6E0074F6AF /* NoteTitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F886E5751FEB4A6E0074F6AF /* NoteTitleTableViewCell.swift */; };
+		F886E5781FEB4A7F0074F6AF /* NoteTaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F886E5771FEB4A7F0074F6AF /* NoteTaskTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F886E55B1FEB38810074F6AF /* ToDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F886E55E1FEB38810074F6AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F886E5601FEB38810074F6AF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F886E5601FEB38810074F6AF /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		F886E5631FEB38810074F6AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F886E5651FEB38810074F6AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F886E5681FEB38810074F6AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F886E56A1FEB38810074F6AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F886E5711FEB475C0074F6AF /* NewNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewNoteViewController.swift; sourceTree = "<group>"; };
+		F886E5731FEB49D00074F6AF /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
+		F886E5751FEB4A6E0074F6AF /* NoteTitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteTitleTableViewCell.swift; sourceTree = "<group>"; };
+		F886E5771FEB4A7F0074F6AF /* NoteTaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteTaskTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,26 @@
 		F886E55D1FEB38810074F6AF /* ToDo */ = {
 			isa = PBXGroup;
 			children = (
+				F886E5701FEB47180074F6AF /* suppornig files */,
+				F886E5601FEB38810074F6AF /* ListViewController.swift */,
+				F886E5711FEB475C0074F6AF /* NewNoteViewController.swift */,
+				F886E5731FEB49D00074F6AF /* ListTableViewCell.swift */,
+				F886E5751FEB4A6E0074F6AF /* NoteTitleTableViewCell.swift */,
+				F886E5771FEB4A7F0074F6AF /* NoteTaskTableViewCell.swift */,
+			);
+			path = ToDo;
+			sourceTree = "<group>";
+		};
+		F886E5701FEB47180074F6AF /* suppornig files */ = {
+			isa = PBXGroup;
+			children = (
 				F886E55E1FEB38810074F6AF /* AppDelegate.swift */,
-				F886E5601FEB38810074F6AF /* ViewController.swift */,
 				F886E5621FEB38810074F6AF /* Main.storyboard */,
 				F886E5651FEB38810074F6AF /* Assets.xcassets */,
 				F886E5671FEB38810074F6AF /* LaunchScreen.storyboard */,
 				F886E56A1FEB38810074F6AF /* Info.plist */,
 			);
-			path = ToDo;
+			path = "suppornig files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +156,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F886E5611FEB38810074F6AF /* ViewController.swift in Sources */,
+				F886E5611FEB38810074F6AF /* ListViewController.swift in Sources */,
+				F886E5761FEB4A6E0074F6AF /* NoteTitleTableViewCell.swift in Sources */,
+				F886E5741FEB49D00074F6AF /* ListTableViewCell.swift in Sources */,
 				F886E55F1FEB38810074F6AF /* AppDelegate.swift in Sources */,
+				F886E5781FEB4A7F0074F6AF /* NoteTaskTableViewCell.swift in Sources */,
+				F886E5721FEB475C0074F6AF /* NewNoteViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,12 +300,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2BULHRS882;
-				INFOPLIST_FILE = ToDo/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ToDo/suppornig files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Weed-Forge.ToDo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -291,12 +315,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2BULHRS882;
-				INFOPLIST_FILE = ToDo/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ToDo/suppornig files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Weed-Forge.ToDo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
